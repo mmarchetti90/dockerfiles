@@ -24,11 +24,12 @@ RUN apt-get -q -y install fastqc && \
     apt-get clean
 
 ## STAR
+## N.B. The default CXXFLAGS_SIMD (-mavx2) was causing the installation to fail 
 RUN cd /tmp && \
     wget --no-check-certificate https://github.com/alexdobin/STAR/archive/${STAR_VERSION}.tar.gz && \
     tar -xzf ${STAR_VERSION}.tar.gz -C /home && \
     cd /home/STAR-${STAR_VERSION}/source && \
-    make STAR && \
+    make STAR CXXFLAGS_SIMD="-std=c++11" && \
     rm /tmp/${STAR_VERSION}.tar.gz
 
 ## samtools
