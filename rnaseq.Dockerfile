@@ -24,7 +24,7 @@ RUN apt-get -q -y install fastqc && \
     apt-get clean
 
 ## STAR
-## N.B. The default CXXFLAGS_SIMD (-mavx2) was causing the installation to fail 
+## N.B. The default CXXFLAGS_SIMD (-mavx2) was causing the installation to fail on a M1 MackBook
 RUN cd /tmp && \
     wget --no-check-certificate https://github.com/alexdobin/STAR/archive/${STAR_VERSION}.tar.gz && \
     tar -xzf ${STAR_VERSION}.tar.gz -C /home && \
