@@ -25,7 +25,7 @@ RUN mamba install -y \
     samtools && \
     conda clean -afty
 
-RUN mamba install --force-reinstall -y java-jdk # Needed to fix "java: symbol lookup error: java: undefined symbol: JLI_StringDup" error
+#RUN mamba install --force-reinstall -y java-jdk # Needed to fix "java: symbol lookup error: java: undefined symbol: JLI_StringDup" error
 
 ### SETTING WORKING ENVIRONMENT ------------ ###
 
