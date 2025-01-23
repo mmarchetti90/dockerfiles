@@ -2,7 +2,7 @@ dockerfile	updated_on	pipelines
 amr.Dockerfile	2024/11/26	mtb-call
 art.Dockerfile	2024/01/16	cocci-call
 atac.Dockerfile	2024/11/26	ATACSeq_analysis
-bwa_bowtie.Dockerfile	2024/11/26	cocci-call, mtb-call, nextflow_variant_calling
+bwa_bowtie.Dockerfile	2024/11/26	cocci-call, mtb-call, nextflow_kraken2, nextflow_variant_calling
 cellranger.Dockerfile	2023/11/06	RNASeq_Analysis
 diagnostic_rnaseq.Dockerfile	2023/05/10	DiagnosticRNASeq
 dmel_tubules.Dockerfile	2024/04/25	MalpighianTubulesAnalysis
@@ -11,7 +11,8 @@ genome_assembly_image_1.Dockerfile	2024/11/26	BacterialGenomeAssembly
 genome_assembly_image_2.Dockerfile	2023/11/14	BacterialGenomeAssembly
 isoseq.Dockerfile	2023/11/22	IsoseqAnalysis
 kallisto.Dockerfile	2024/11/26	RNASeq_Analysis
-kraken2.Dockerfile	2024/09/30	RNASeq_Analysis
+kraken2.Dockerfile	2024/09/30	cocci-call, mtb-call, nextflow_kraken2
+metagenome_assembly	2025/01/22	metagenome_assembly
 mummer.Dockerfile	2024/05/02	mtb-call
 ont.Dockerfile	2024/09/18	long_reads_methylation, nextflow_variant_calling
 pacb.Dockerfile	2024/09/18	long_reads_methylation, nextflow_variant_calling
@@ -22,6 +23,6 @@ scrnaseq_analysis.Dockerfile	2024/11/26	scRNA-Seq-analysis
 star.Dockerfile	2023/11/06	RNASeq_Analysis
 subread.Dockerfile	2023/11/06	RNASeq_Analysis
 tbprofiler.Dockerfile	2024/11/26	mtb-call
-trim_galore.Dockerfile	2023/11/06	cocci-call, DiagnosticRNASeq, mtb-call, nextflow_variant_calling, RNASeq_Analysis
+trim_galore.Dockerfile	2023/11/06	cocci-call, DiagnosticRNASeq, mtb-call, nextflow_kraken2, nextflow_variant_calling, RNASeq_Analysis
 umi_tools.Dockerfile	2024/10/10	
 variantcalling.Dockerfile	2024/11/26	cocci-call, mtb-call, nextflow_variant_calling
