@@ -1,7 +1,7 @@
 dockerfile	updated_on	pipelines
 amr.Dockerfile	2024/11/26	mtb-call
 art.Dockerfile	2024/01/16	cocci-call
-atac.Dockerfile	2024/11/26	ATACSeq_analysis
+atac.Dockerfile	2025/02/13	ATACSeq_analysis
 bwa_bowtie.Dockerfile	2024/11/26	cocci-call, mtb-call, nextflow_kraken2, nextflow_variant_calling
 cellranger.Dockerfile	2023/11/06	RNASeq_Analysis
 diagnostic_rnaseq.Dockerfile	2023/05/10	DiagnosticRNASeq
